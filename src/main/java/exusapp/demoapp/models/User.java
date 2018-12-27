@@ -1,14 +1,34 @@
 package exusapp.demoapp.models;
 
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+
+@Entity
 public class User {
 
+    @Id
+    @GeneratedValue
+    @Column(name = "id")
+    private int id;
+    
+    @Column(name = "first_name")
+    private String first_name;
 
-    int    id;
-    String first_name;
-    String  last_name;
-    String email;
-    String        gender;
-    String ip_address;
+    @Column(name = "last_name")
+    private String last_name;
+
+    @Column(name = "email")
+    private String email;
+
+    @Column(name = "gender")
+    private String gender;
+
+    @Column(name = "ip_address")
+    private String ip_address;
 
     public int getId() {
         return id;
