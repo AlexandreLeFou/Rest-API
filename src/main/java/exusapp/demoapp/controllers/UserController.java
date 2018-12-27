@@ -25,23 +25,15 @@ public class UserController {
         return "display-all-data";
     }
 
-    @RequestMapping("/saveUser")
-   public String saveNewUserr(User user,ModelMap modelMap) { //expose it out a as bean -spring container-
+
+    @PostMapping(value ="/saveUser")
+    public String saveTheUser(@RequestBody final User user,ModelMap modelMap){ //db upon save display all values
         userRepository.save(user);
         List<User> users = userRepository.findAll();
+        // System.out.println(users);
         modelMap.addAttribute("users",users);
         return "display-all-data";
-
-    }
-
-
-    @PostMapping(value ="/loaduser")
-    public List<User> persist(@RequestBody final User user,ModelMap modelMap){ //db upon save display all values
-        userRepository.save(user);
-      //  List<User> users = userRepository.findAll();
-      //  modelMap.addAttribute("users",users);
-        //return "display-all-data";
-        return userRepository.findAll();
+        //return userRepository.findAll();
 
     }
 
