@@ -17,21 +17,15 @@ public class UserController {
     UserRepository userRepository;
 
 
-   // @GetMapping("/hello")
-  //  public String getHellomsg() {
-  //      return "Hello this is a demo app regarding Rest API";
-  //  }
-
-
-    @RequestMapping(value ="/allowners")
+    @RequestMapping(value ="/allusers")
     public String getAllTheUsers( ModelMap modelMap) { //return list of users from db
         List<User> users = userRepository.findAll();
-        System.out.println(users);
+       // System.out.println(users);
         modelMap.addAttribute("users",users);
         return "display-all-data";
     }
 
-    @PostMapping(value ="/loadowners")
+    @PostMapping(value ="/loaduser")
     public List<User> persist(@RequestBody final User user){ //db upon save display all values
         userRepository.save(user);
         return userRepository.findAll();
