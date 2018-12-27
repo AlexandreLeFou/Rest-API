@@ -1,4 +1,13 @@
 package exusapp.demoapp.services;
 
-public class UserService {
+import exusapp.demoapp.entities.User;
+
+import java.util.List;
+
+public interface UserService {
+
+    List<User> getUsersByEmail(String email);
+     List<User> getAllUsers() ;
+
+
 }

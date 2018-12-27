@@ -1,4 +1,4 @@
-package exusapp.demoapp.models;
+package exusapp.demoapp.entities;
 
 
 import javax.persistence.Column;
@@ -14,7 +14,7 @@ public class User {
     @GeneratedValue
     @Column(name = "id")
     private int id;
-    
+
     @Column(name = "first_name")
     private String first_name;
 
