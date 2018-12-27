@@ -31,6 +31,10 @@ public class UserServiceImp implements UserService {
         return repository.findUsersByEmail(email);
     }
 
+    @Override
+    public User saveUser(User user) { //new owner
+        return repository.save(user);
+    }
 
 }
 
