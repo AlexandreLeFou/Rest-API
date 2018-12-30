@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
 
@@ -17,8 +18,7 @@ public class UserController {
     @Autowired
     UserRepository userRepository;
 
-
-    @RequestMapping(value ="/allUsers")
+    @RequestMapping(value ="/")
     public String getAllTheUsers( ModelMap modelMap) { //return list of users from db
         List<User> users = userRepository.findAll();
        // System.out.println(users);

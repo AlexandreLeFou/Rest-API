@@ -1,13 +1,31 @@
 <#setting number_format="computer">
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="www.exus.co.uk">Exus</a>
+        </div>
 
-
+        <ul class="nav navbar-nav">
+            <li><a href="https://gr.linkedin.com/in/alexandros-gazis">LinkedIn</a></li>
+            <li><a href="https://github.com/AlexandreLeFou/Rest-API">Github Repo</a></li>
+        </ul>
+    </div>
+</nav>
 <div class="container">
     <div class="col-lg-12">
-         <h2 class="my-4">Display all Db values</h2>
+        <center><h2 class="my-4">Display MySql data</h2></center>
+
     </div>
-    <table class ="table table-striped">
+    <table class="table table-striped">
         <tr>
             <th>ID</th>
             <th>first_name</th>
@@ -36,16 +54,26 @@
         </#list>
 
 
-
-
-
-
     </table>
-    <br>
+
+    <footer>
+        <div class="col-lg-12" align="right">
+            <img class="rounded-circle img-fluid d-block mx-auto" style="width:12%"
+                 src="https://www.crissh2020.eu/wp-content/uploads/2017/06/exus.jpg" alt="">
+        </div>
+
+        <div class="col-lg-12" align="right">
+            <FORM>
+                <INPUT TYPE="button" style="height:50px; width:135px"; VALUE="Contact Me"
+                       onClick="parent.location='mailto:alexandrosgazis.ee@gmail.com?subject=Rest-API GitHub Project&cc=agazis@ee.duth.gr'">
+            </FORM>
+        </div>
+        <br><br>
+    </footer>
+
 </div>
 
 
-<!-- /.container -->
-
+</body>
 
 </html>
