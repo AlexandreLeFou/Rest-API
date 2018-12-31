@@ -9,28 +9,34 @@ The web application required to be able to implement the following functionaliti
      
     This information will include the following fields: <*first_name*, *last_name*, *email*, *gender*, *ip_address*>
 
-2.	Querying of the database in order to retrieve specific user information via a GET request.
+2.	Querying of the database, in order to retrieve specific user information via a GET request.
      
-     This query was developed using the *user’s email address* owhereas similar implementation can be induced using the ip address.
+     This query was developed using the *user’s email address*, whereas similar implementation can be induced using the ip address.
 
 ## Web Application Structure
 The application developed implements the following methods (using FTL pages):
 
-1.	**/** : displays all the records of the database. 
+1.	**/** : 
+
+Displays all the records of the database. 
        
-      •	 If the database (consisting of 1 table) is empty this page shall display an empty table. This option was deliberately selected so as to provide some basic information regarding the dB’s fields to the user of the application. 
+•  If the database (consisting of 1 table) is empty, this page shall display an empty table. This option was deliberately selected, so as to provide some basic information, regarding the dB’s fields to the user of the application.
             
-       •	Each column name is according to the dB’s fields as a convenient measure to help the testing of our application (creating get/post parameters via postman application).
+•  Each column name is according to the dB’s fields, as a convenient measure to help the testing of our application (creating get/post parameters via postman application).
             
             
- 2.	**/saveUser** : when the proper post parameter is sent from postman application it stores the inserted value to the dB and then redirects the user to the /allUsers page in order to display all the values . If the id provided already exists, it shall update the tuple’s fields.
+ 2.	**/saveUser** : 
+ 
+When the proper post parameter is sent from postman application, it stores the inserted value to the dB and then redirects the user to the /allUsers page, in order to display all the values. If the id provided already exists, it shall update the tuple’s fields.
         
         
-3.	**/getUser** : when the proper post parameter is sent from postman application, the user is redirected to a new site.
+3.	**/getUser** : 
+
+When the proper post parameter is sent from postman application, the user is redirected to a new site.
+
+•  If no entry is found (or wrong search input is provided) it displays a plain text message. 
        
-       •	If no entry is found (or wrong search input is provided) it displays a plain text message.
-       
-       •	If one or more entries exist, each row is presented in a table.
+•  If one or more entries exist, each row is presented in a table.
 
 
     
