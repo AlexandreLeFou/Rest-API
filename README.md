@@ -1,4 +1,4 @@
-# Rest-API Spring Boot Project
+# Rest-API using Java Spring Boot (MVC)
 
 This repository aims to develop a simple web application using a REST API, which will be able to handle simple information storage and retrieval requests for a group of users.
 
