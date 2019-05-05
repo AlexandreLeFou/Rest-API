@@ -12,7 +12,7 @@
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="www.exus.co.uk">Exus</a>
+            <a class="navbar-brand" href="https://github.com/AlexandreLeFou/Rest-API">Company</a>
         </div>
 
         <ul class="nav navbar-nav">
@@ -60,7 +60,7 @@
             </table>
             <div class="col-lg-12" align="right">
                 <img class="rounded-circle img-fluid d-block mx-auto" style="width:12%"
-                     src="https://www.crissh2020.eu/wp-content/uploads/2017/06/exus.jpg" alt="">
+                     src="https://image.freepik.com/vector-gratis/plantilla-logo-compania-tecnologica_1061-20.jpg" alt="">
             </div>
 
 
@@ -70,7 +70,7 @@
                 <br>
                 <h2 class="my-4" >There are no data entries to display </h2>
                 <img class="rounded-circle img-fluid d-block mx-auto" style="width:30% "
-                     src="https://www.crissh2020.eu/wp-content/uploads/2017/06/exus.jpg" alt="" >
+                     src="https://image.freepik.com/vector-gratis/plantilla-logo-compania-tecnologica_1061-20.jpg" alt="" >
                 <p></p>
             </div>
 
